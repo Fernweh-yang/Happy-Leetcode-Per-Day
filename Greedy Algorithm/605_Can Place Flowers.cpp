@@ -56,7 +56,6 @@ public:
 如果是0判断下一格是否为0，若=0，则可以种花n-=1，并向右跳2格。
 若下一格是1，则向右跳3格。最后判断是否n<=0。若是则可以种n朵花
 */
-但在[0,1,0,1,0,1,0,0] 1和 [0] 1 都会出现Runtime Error 的问题。尚未知原因
 
 class Solution {
 public:
@@ -65,7 +64,7 @@ public:
         for(int i=0;i<size && n>0;)
         {
             if(flowerbed[i]==1) i+=2;
-            else if(flowerbed[i+1]==0 || i==size-1) 
+            else if( i==size-1|| flowerbed[i+1]==0) 
                 {
                     n--;
                     i+=2;
