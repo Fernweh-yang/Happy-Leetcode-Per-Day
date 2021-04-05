@@ -1,4 +1,4 @@
-//关键字：回溯法Backtracking,vector
+//关键字：回溯法Backtracking,vector，排列
 /*
 n个数字的所有排列组合：
 1.从当前位置i=0开始，让他依次和他后面的所有数字进行交换。
